@@ -20,7 +20,7 @@ body {
 .container {
     height: 100%;
     width: 100%;
-    background-color: #cfc7c4;
+    background-color: #c6c3e0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -31,22 +31,23 @@ body {
 }
 
 .on-load-text {
-    font-size: 40px;
-    opacity: 0;
-    /* opacity: 1; */
+    font-size: 58px;
+    /* opacity: 0; */
+    opacity: 1;
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    /* animation: fade-in 3s; */
-    /* transition: all 2.5s ease-out; */
+    animation: fade-in 3s;
+    transition: all 2.5s ease-out;
+    font-family: 'Tangerine', cursive;
 }
-/* 
+
 @keyframes fade-in {
     from {opacity: 0}
     to {opacity: 1}
-} */
+}
 
 .options-wrapper {
     display: flex;
@@ -54,8 +55,8 @@ body {
     flex-wrap: wrap;
     max-width: 350px;
     margin: auto;
-    /* opacity: 0; */
-    /* transition: all 0.5s ease-in-out; */
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .time-options ul {
@@ -67,7 +68,7 @@ body {
     list-style-type: none;
     padding: 18px 14px;
     border-radius: 5px;
-    background-color: #8A7D80;
+    background-color: #676582;
 }
 
 .time-opt:hover, .music-opt:hover {
@@ -86,10 +87,10 @@ body {
     list-style-type: none;
     padding: 38px 20px;
     border-radius: 5px;
-    background-color: #8A7D80;
+    background-color: #676582;
     margin-top: 20px;
 }
 
 .selected {
-    background-color: darken(#8A7D80, 15%);
+    background-color: darken(#676582, 15%);
 }

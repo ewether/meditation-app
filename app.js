@@ -23,13 +23,36 @@ $(document).ready(function(){
 
     $('.time-options ul li').click(function() {
         $(this).css("background-color", "#4d4c61");
+        $('.time-options ul li').not(this).css("background-color", "#676582");
+
+        let timeID = this.id;
+        console.log(timeID);
+
+        if (timeID === 'time-opt-5') {
+            console.log('5');
+        } else if (timeID === 'time-opt-15') {
+            console.log('15');
+        } else {
+            console.log('30');
+        }
     });
-
-    // if you click another element, 
-    // -> background color goes back to normal on all other elements
-
+    
     $('.music-options ul li').click(function() {
         $(this).css("background-color", "#4d4c61");
+        $('.music-options ul li').not(this).css("background-color", "#676582");
+
+        let musicID = this.id;
+        console.log(musicID);
+
+        if (musicID === 'music-opt-1') {
+            console.log('1');
+        } else if (musicID === 'music-opt-2') {
+            console.log('2');
+        } else if (musicID === 'music-opt-3') {
+            console.log('3');
+        } else {
+            console.log('4');
+        }
     });
 
 });
